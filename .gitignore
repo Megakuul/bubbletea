@@ -21,3 +21,8 @@ tutorials/commands/commands
 .idea
 coverage.txt
 dist/
+
+# Ignore Emacs output
+*~
+\#*\#
+.\#*

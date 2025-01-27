@@ -77,7 +77,7 @@ func (p *Program) restoreInput() error {
 // initCancelReader (re)commences reading inputs.
 func (p *Program) initCancelReader() error {
 	var err error
-	p.cancelReader, err = newInputReader(p.input)
+	p.cancelReader, err = cancelreader.NewReader(p.input)
 	if err != nil {
 		return fmt.Errorf("error creating cancelreader: %w", err)
 	}
